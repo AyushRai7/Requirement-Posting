@@ -15,6 +15,14 @@ export default function ReviewSubmitStep({ form, onBack }) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  const getDisplayDate = () => {
+  if (form.dateType === "range") {
+    return `${form.startDate} to ${form.endDate}`;
+  }
+  return form.eventDate;
+};
+
+
   const submit = async () => {
   try {
     setLoading(true);
@@ -65,7 +73,7 @@ export default function ReviewSubmitStep({ form, onBack }) {
             form.eventType === "Other" ? form.customEventType : form.eventType
           }
         />
-        <Row label="Date" value={form.eventDate} />
+        <Row label="Date" value={getDisplayDate()} />
         <Row label="Location" value={form.location} />
         <Row label="Venue" value={form.venue} />
       </div>
