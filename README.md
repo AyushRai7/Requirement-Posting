@@ -1,4 +1,4 @@
-# Event Requirement Posting Flow
+# Event Requirement Posting 
 
 A multi-step requirement posting flow built using **Next.js (Frontend)** and **Node.js + Express + MongoDB (Backend)**.  
 The project allows users to post event requirements through a 4-step form with dynamic fields and smooth UI transitions.
