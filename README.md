@@ -6,7 +6,6 @@ The project allows users to post event requirements through a 4-step form with d
 ---
 
 - **Frontend URL (vercel)**: https://requirement-posting.vercel.app/
-- **Screen Recording G-drive link**:
 
 ## 🚀 Features
 
